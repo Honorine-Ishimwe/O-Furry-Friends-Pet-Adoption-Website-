@@ -1,0 +1,4 @@
+1:user1:cat:persian:0.5:male:Indoor only, very playful
+2:user2:dog:labrador:2:female:Good with kids, vaccinated
+3:user3:dog:german shepherd:3:male:Trained, protective, calm
+4:user4:cat:calico:0.3:female:Litter trained, affectionate

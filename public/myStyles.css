@@ -1,0 +1,20 @@
+.whole{
+    background-color: yellow;
+}
+.legend1{
+    color: yellowgreen;
+}
+.fieldset1{
+    border: 3px solid lightgreen;
+    background-color:purple;
+}
+.text1{
+    color: greenyellow;
+}
+.fieldset2{
+    border: 3px solid red;
+    background-color: palevioletred;
+}
+.text2{
+    color: orange;
+}

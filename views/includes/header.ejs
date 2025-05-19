@@ -1,0 +1,13 @@
+<header>
+    <p id="dateTime"></p>
+    <h1 class="site-title">O Furry Friends</h1>
+    <a href="/"><img src="/pet_pic.jpeg" alt="Logo picture" width="250" height="300"></a>
+  </header>
+  
+  <script>
+    function updateDateTime() {
+      document.getElementById("dateTime").textContent = new Date().toLocaleString();
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+  </script>

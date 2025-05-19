@@ -1,0 +1,14 @@
+<%- include('../includes/header') %>
+<h2>Register</h2>
+<form method="POST" action="/register">
+  <label for="username">Choose a Username:</label><br>
+  <input type="text" name="username" id="username" required><br><br>
+
+  <label for="password">Choose a Password:</label><br>
+  <input type="password" name="password" id="password" required><br><br>
+
+  <button type="submit">Register</button>
+</form>
+
+<p>Already have an account? <a href="/login">Login here</a></p>
+<%- include('../includes/footer') %>

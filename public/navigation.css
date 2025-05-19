@@ -1,0 +1,31 @@
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    width: 100px;
+}
+.home{
+background-color : green;
+color: white;
+}
+.news{
+    background-color: gainsboro;
+}
+.contact{
+    background-color: gainsboro;
+}
+.about{
+    background-color: gainsboro;
+}
+li:hover{
+    background-color: black;
+    color: white;
+}
+.nav{
+      position: absolute;
+      left: 0;
+      top: 50px;
+}
+.body{
+    text-align: left;
+}

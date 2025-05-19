@@ -1,0 +1,39 @@
+<!DOCTYPE HTML5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dog/Cat Adoption Website</title>
+    <link rel="stylesheet" href="/pet.css">
+  </head>
+  <body>
+    <nav id="sidebar">
+      <ul>
+        <% if (typeof session !== 'undefined' && session.loggedIn) { %>
+          <li><a href="/petHome">Home page</a></li>
+          <li><a href="/findApet">Adopt a dog/cat</a></li>
+          <li><a href="/dogCare.html">Dog Care</a></li>
+          <li><a href="/catCare.html">Cat Care</a></li>
+          <li><a href="/petGiveAway">Give Away a Pet</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+          <li><a href="/logout">Logout (<%= session.username %>)</a></li>
+        <% } else { %>
+          <li><a href="/createAccount">Login / Create Account</a></li>
+        <% } %>
+      </ul>
+    </nav>
+
+    <div id="main-content">
+      <%- include('../includes/header') %>
+
+      <% if (!session || !session.loggedIn) { %>
+        <h2>Welcome to O Furry Friends!</h2>
+        <p>Please <a href="/createAccount">Login</a> or <a href="/createAccount">Create an Account</a> to get started.</p>
+      <% } else { %>
+        <h2>Welcome back, <%= session.username %>!</h2>
+        <p>You can now browse available pets, adopt, or give away a pet using the menu.</p>
+      <% } %>
+
+      <%- include('../includes/footer') %>
+    </div>
+  </body>
+</html>
